@@ -18,7 +18,7 @@ module.exports = {
     "plugin:vue/recommended"
   ],
   "rules": {
-    // 缩进2空格
+    // 缩进
     "indent": [
       1,
       2
