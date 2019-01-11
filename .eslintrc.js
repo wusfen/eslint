@@ -14,37 +14,25 @@ module.exports = {
   ],
   "extends": [
     "eslint:recommended",
-    // eslint-plugin-vue ***
+    // *** eslint-plugin-vue
     "plugin:vue/recommended"
   ],
   "rules": {
     // 缩进
-    "indent": [
-      1,
-      2
-    ],
+    "indent": [1, 2],
     // 分号
-    "semi": [
-      1,
-      "never"
-    ],
+    "semi": [1, "never"],
     // 引号
-    "quotes": [
-      1,
-      "single"
-    ],
+    "quotes": [1, "single"],
     // 对象属性尾逗号
-    "comma-dangle": [
-      1,
-      "only-multiline"
-    ],
+    "comma-dangle": [1, "only-multiline"],
     // 对象大括号
-    "object-curly-newline": [
-      1,
-      {
-        "multiline": true
-      }
-    ],
+    // "object-curly-newline": [
+    //   1,
+    //   {
+    //     "multiline": true
+    //   }
+    // ],
     // 对象属性多行
     "object-property-newline": [
       1,
@@ -72,11 +60,14 @@ module.exports = {
     // console.xxx
     "no-console": [
       1,
-      { "allow": ["warn", "error"] }
+      {
+        "allow": ["warn", "error"]
+      }
     ]
   },
   "globals": {
     "Page": true,
+    "Component": true,
     "wx": true,
   }
 }
